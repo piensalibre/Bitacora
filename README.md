@@ -1,2 +1,2 @@
-# Bitácora
-Tarea para la clase de desarrollo móvil
+# Bitácora para Android
+Tarea para la clase de desarrollo móvil 
