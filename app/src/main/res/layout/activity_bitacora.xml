@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BitacoraActivity">
+
+    <!-- Historia del día -->
+    <EditText
+        android:id="@+id/historiaDelDiaEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Historia del día"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Agradecimientos -->
+    <EditText
+        android:id="@+id/agradecimientosEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Agradecimientos"
+        app:layout_constraintTop_toBottomOf="@id/historiaDelDiaEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Victorias -->
+    <EditText
+        android:id="@+id/victoriasEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Victorias"
+        app:layout_constraintTop_toBottomOf="@id/agradecimientosEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Aprendizajes del día -->
+    <EditText
+        android:id="@+id/aprendizajesEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Aprendizajes del día"
+        app:layout_constraintTop_toBottomOf="@id/victoriasEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Bloqueos -->
+    <EditText
+        android:id="@+id/bloqueosEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bloqueos"
+        app:layout_constraintTop_toBottomOf="@id/aprendizajesEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Ruido interno -->
+    <EditText
+        android:id="@+id/ruidoInternoEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ruido Interno"
+        app:layout_constraintTop_toBottomOf="@id/bloqueosEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para guardar -->
+    <Button
+        android:id="@+id/guardarBitacoraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Bitácora"
+        app:layout_constraintTop_toBottomOf="@id/ruidoInternoEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+
+    <Button
+        android:id="@+id/retrospectivaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Retrospectiva"
+        app:layout_constraintTop_toBottomOf="@id/guardarBitacoraButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para cerrar sesión -->
+    <Button
+        android:id="@+id/cerrarSesionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guardarBitacoraButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
